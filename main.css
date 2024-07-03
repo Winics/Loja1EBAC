@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+    display: flex;
+}
+
+header {
+    background-color: rgb(29, 30, 29);
+    color: rgb(255, 255, 255);
+    padding: 16px 0;
+}
+
+header img {
+    height: 50px;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+header .container div {
+    display: flex;
+    align-items: end;
+}
+
+header .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+section {
+    padding-top: 20px;
+}
+
+article  h2, h2 {
+    color: rgb(29, 30, 29);
+    background-color: rgb(243, 243, 243);
+    padding: 7px 0;
+    padding-left: 4px;
+    padding-right: 99%;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 24px;
+    width: 100%;
+}
+
+.social {
+    display: flex;
+}
+
+.social img {
+    height: 40px;
+}
+
+article p {
+    margin-bottom: 5px;
+}
+
+article ul {
+    margin-bottom: 20px;
+}
+
+section img {
+    height: 280px;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.section-produtos {
+    height: 100%;
+    display: block;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1%;
+    justify-content: center;
+}
+
+.produtos > div {
+    background-color: rgb(243, 243, 243);
+    padding: 8px;
+    margin-bottom: 13px;
+}
+
+.produtos div:hover {
+    transform: scale(1.008);
+}
+img:hover {
+    transform: scale(1.0);
+}
+
+.produtos a {
+    text-decoration: none;
+}
+
+.produtos h3 {
+    color: rgb(29, 30, 29);
+    margin-bottom: 2px;
+}
+
+.produtos h4 {
+   color: rgba(29, 30, 29, 0.8);
+   margin-bottom: 2px;
+}
+
+.produtos-a button {
+    margin: 1px;
+    margin-left: 0;
+    padding: 2px;
+    color: rgb(117, 132, 145);
+    font-size: 12px;
+}
+
+.produtos button:hover {
+    color: rgb(29, 30, 29);
+    border-color: rgb(29, 30, 29);
+}
+
+button {
+    cursor: pointer;
+}
+
+
+.carousel-imagens {
+    display: block;
+    overflow: hidden;
+}
+
+.produtos article {
+    min-height: 100%;
+}
+
+footer {
+    background-color: rgb(29, 30, 29);
+    margin-top: 10px;
+}
+
+footer .container {
+    padding: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+}
+
+.produtos .compra {
+    background-color: rgb(29, 30, 29);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px 0;
+    font-weight: bold;
+    display: block;
+    font-size: 16px;
+}
+
+.produtos .compra:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(29, 30, 29);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width: 641px) {
+    .container {
+        display: block;
+    }
+
+    header,
+    header div {
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    header div img {
+        margin-right: 10px;
+    }
+
+    header a {
+    margin-right: 40px;
+    margin-left: 40px;
+    }
+
+    header nav {
+        justify-content: space-between;
+    }
+
+    section {
+        display: block;
+        padding-top: 10px;
+        margin: 10px;
+    }
+
+    article {
+        display: block;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        margin: 0px;
+    }
+
+    section div img {
+        height: 400px;
+        margin: 0;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .produtos h3 {
+        margin-bottom: 4px;
+    }
+    
+    .produtos h4 {
+       margin-bottom: 4px;
+    }
+
+    .produtos-a button {
+        margin: 3px;
+        margin-left: 0;
+        margin-bottom: 6px;
+    }
+
+    .produtos .compra:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(29, 30, 29);
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    footer {
+        display: block;
+        text-align: center;
+    }
+
+    .social a{
+        margin-right: 20px;
+    }
+}
