@@ -262,3 +262,40 @@ footer .container {
         margin-right: 20px;
     }
 }
+
+@media screen and (max-width:1023px) and (min-width:641px) {
+    header .container{
+        padding: 0 20px;
+    }
+
+    header nav a {
+        margin: 0;
+        margin-left: 20px;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        margin: 0px;
+    }
+
+    section img {
+        height: 430px;
+        margin-right: 10px;
+    }
+
+    .section-produtos {
+        height: 100%;
+        display: block;
+    }
+
+    .social img {
+        margin-right: 30px;
+    }
+
+    section {
+        display: block;
+        padding-top: 10px;
+        margin: 10px;
+    }
+}
